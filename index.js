@@ -28,7 +28,7 @@ function driversByName() {
   return drivers.sort(function(a, b) {
     let nameA = a.name.toUpperCase()
     let nameB = b.name.toUpperCase()
-    
+
     if (nameA < nameB) {
       return -1
     } else if (nameA > nameB) {
@@ -36,5 +36,11 @@ function driversByName() {
     }
 
     return 0
+  })
+}
+
+function totalRevenue() {
+  return drivers.reduce(function(accumulator, currentValue) {
+    return accumulator + currentValue.revenue
   })
 }
