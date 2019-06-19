@@ -45,3 +45,11 @@ function totalRevenue(drivers) {
       return a + b
   })
 }
+
+function averageRevenue() {
+  let total = 0
+
+  drivers.map(driver => total += driver.revenue)
+
+  return total/drivers.length
+}
