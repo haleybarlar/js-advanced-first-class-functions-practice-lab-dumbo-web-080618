@@ -47,7 +47,7 @@ function totalRevenue(drivers) {
 }
 
 function averageRevenue() {
-  let total = 0
+  let total
 
   drivers.map(driver => total += driver.revenue)
 
