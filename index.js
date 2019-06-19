@@ -43,5 +43,5 @@ function totalRevenue(drivers) {
   return drivers.map(driver => driver.revenue)
     .reduce(function(a,b) {
       return a + b
-    })
+  })
 }
