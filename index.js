@@ -39,7 +39,7 @@ function driversByName() {
   })
 }
 
-function totalRevenue() {
+function totalRevenue(drivers) {
   const reducer = (acc, currentValue) => acc + currentValue
 
   return drivers.reduce(reducer)
